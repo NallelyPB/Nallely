@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    
+    <!-- Enlaces CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reloj.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Sección del reloj -->
+<div class="reloj">
+    <p class="fecha"></p>
+    <p class="tiempo"></p>
+</div>
+
+<!-- Formulario de registro -->
+<div class="formulario">
+    <h1>Registro de Usuario</h1>
+    <form method="post">
+        <!-- Campo Nombre de Usuario -->
+        <div class="username">
+            <input type="text" required>
+            <label>Nombre de usuario</label>
+            <span></span>
+        </div>
+        
+        <!-- Campo Correo Electrónico -->
+        <div class="email">
+            <input type="email" required>
+            <label>Correo Electrónico</label>
+            <span></span>
+        </div>
+        
+        <!-- Campo Contraseña -->
+        <div class="contrasena">
+            <input type="password" required>
+            <label>Contraseña</label>
+            <span></span>
+        </div>
+
+        <!-- Campo Confirmar Contraseña -->
+        <div class="confirmar-contrasena">
+            <input type="password" required>
+            <label>Confirmar Contraseña</label>
+            <span></span>
+        </div>
+
+        <!-- Botón para enviar -->
+        <input type="submit" value="Registrarse">
+
+        <!-- Enlace para iniciar sesión -->
+        <p>¿Ya tienes una cuenta? <a href="#">Inicia Sesión</a></p>
+    </form>
+</div>
+
+<!-- Sección para abrir la página de UNMSM Sistemas -->
+<div class="enlace-web">
+    <h2>Visita la página de Sistemas UNMSM</h2>
+    <a href="https://sistemas.unmsm.edu.pe/site/index.php" target="_blank">
+        <button type="button">Ir a Sistemas UNMSM</button>
+    </a>
+</div>
+
+<!-- JavaScript del reloj -->
+<script src="reloj.js"></script>
+
+
+<!-- Sección del clima -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima en Mi Ciudad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Clima en tu Ciudad</h1>
+    <div id="weather">
+        <p>Temperatura: <span id="temperature"></span> °C</p>
+        <p>Descripción: <span id="description"></span></p>
+        <p>Humedad: <span id="humidity"></span>%</p>
+    </div>
+
+<!-- JavaScript del clima -->
+<script src="clima.js"></script>
+    
+</body>
+</html>

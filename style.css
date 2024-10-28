@@ -1,0 +1,175 @@
+/* Estilos generales del formulario*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #56d5db, #52e7e3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Estilos del formulario */
+.formulario {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.username, .email, .contrasena, .confirmar-contrasena {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #56d5db;
+    background-color: white;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus + label,
+input[type="email"]:focus + label,
+input[type="password"]:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -15px;
+    font-size: 12px;
+    color: #56d5db;
+}
+
+input[type="submit"] {
+    background-color: #52e7e3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #33cd81;
+}
+
+/* Enlace de inicio de sesión */
+p {
+    font-size: 14px;
+    color: #333;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la sección del enlace */
+.enlace-web {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+.imagen-enlace {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.enlace-web button {
+    display: block;
+    background-color: #52e7e3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.enlace-web button:hover {
+    background-color: #33cd81;
+}
+
+/* Estilos del reloj */
+.reloj {
+    color: #333; 
+    text-align: left;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 8px; 
+}
+
+.fecha, .tiempo {
+    letter-spacing: 0.1em;
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.clima{
+    font-family: Arial,sans-serif;
+    margin: 20px;
+}
+
+h1{
+    text-align:left;
+    color:#333;
+}
+#weather {
+    text-align: left; 
+    font-size: 1.2em;
+    color: #555;
+}
+
+#weather p {
+    margin: 5px 0;
+}
+
+#weather span {
+    font-weight: bold;
+    color: #1E90FF; 
+}
